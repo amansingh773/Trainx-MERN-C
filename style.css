@@ -1,0 +1,12 @@
+*{
+     margin: 0px;
+     padding: 0px;
+}
+
+button{
+     color: white;
+     background-color: green;
+     font-size: 30px;
+     font-weight: 700;
+     margin-top: 30px;
+}
