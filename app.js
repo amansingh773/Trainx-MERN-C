@@ -587,6 +587,88 @@
 
 
 
+// call(),apply(),bind()
+
+// call()
+
+// let obj = {
+//      name : "Aman",
+//      age : 23
+// }
+
+// let obj2 = {
+//      name : "Rahul"
+// }
+
+// function greet()
+// {
+//      console.log(`Hello my name is ${this.name} and age is ${this.age}`)
+// }
+
+// greet.call(obj);
+
+
+// call() with arguments
+
+
+// let obj = {
+//      name : "Aman",
+     
+// }
+
+// let obj2 = {
+//      name : "Rahul"
+// }
+
+// function greet(city,age)
+// {
+//      console.log(`Hello my name is ${this.name} and age is ${age} and city is ${city} `)
+// }
+
+// greet.call(obj,"delhi",23);
+
+
+// apply()
+
+// let obj = {
+//      name : "Aman",
+// }
+
+// let obj2 = {
+//      name : "Rahul"
+// }
+
+// function greet(city,age)
+// {
+//      console.log(`Hello my name is ${this.name} and city is ${city} and age is ${age}`)
+
+// }
+
+// greet.apply(obj,["delhi",23]);
+
+
+
+// bind()
+
+let obj = {
+     name :"Aman",
+}
+
+let obj2 = {
+     name : "Rahul"
+}
+
+function greet()
+{
+     console.log(`Hello this is my name ${this.name}`)
+
+}
+
+let greetUser = greet.bind(obj)
+greetUser();
+
+
+
 
 
 
