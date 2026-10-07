@@ -181,12 +181,93 @@
 // console.log(newValue);
 
 
+// find()
+
+// let arr = [1,2,3,4,5,6,7,8,9];
+
+// let newValue = arr.find((number)=>{
+//      return number > 3
+// })
+
+// console.log(newValue);
+
+
+// some()
+
+// let arr1 = [1,2,3,4,5,6,7,8,9];
+
+// let newVal = arr1.some((number)=>{
+//      return number % 2 == 0
+// })
+
+// console.log(newVal);
+
+
+// every()
+
+// let arr2 = [1, 3,5, 7, 9];
+
+// let newVal1 = arr2.every((number)=>{
+//      return number % 2 !== 0
+// })
+
+// console.log(newVal1);
 
 
 
+// concat()
+
+// let arr1 = [1,2,3,4,5];
+// let arr2 = [6,7,8,9,10];
+
+// let newArr = arr1.concat(arr2)
+
+// console.log(newArr)
+
+// sort() method
+
+// let arr = [10,100,20,90,30,80,40,70,60,50];
+
+// let sortedArray = arr.sort((a,b)=> b - a);
+
+// console.log(sortedArray)
 
 
 
+// sort() method without compare function
+
+// let arr = [10,100,20,90,30,80,40,70,60,50];
+
+// console.log(arr.sort())
+
+
+// Array Destructuring
+
+// let arr = [10,20,30,40];
+
+// let [a,b,c] = arr;
+
+// console.log(a)
+// console.log(b)
+// console.log(c)
+
+
+// default value 
+
+// let arr = [10,20,30];
+
+// let [a, b, c, d = 40 ] = arr;
+
+// console.log(a,b,c,d)
+
+
+// skipping values
+
+// let arr = [1,2,3,4,5];
+
+// let [a,b,c,,e] = arr
+
+// console.log(a,b,c,e);
 
 
 
