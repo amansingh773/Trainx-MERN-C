@@ -1,5 +1,7 @@
 // Introduction to Object
 
+
+
 // An object is used to store data in key value pair.
 
 // creating an object
@@ -130,16 +132,98 @@
 
 // JSON Structure
 
-`{ "name" : "Aman", "age" : 23, "city" : "delhi" }`
+// `{ "name" : "Aman", "age" : 23, "city" : "delhi" }`
 
-// 
+// Shallow Copy and Deep copy  
 
-
-
-
+// Shallow copy
 
 
+// let obj = {
+//      name : "Aman",
+//      age : 23,
 
+//      address : {
+//           city : "Delhi",
+//           country : "India"
+//      }
+// }
+
+
+// let copy = {...obj}
+
+// copy.name = "Rohit"
+
+// copy.address.city = "lko"
+
+// console.log(obj)
+// console.log(copy)
+
+
+
+// Deep copy
+
+// let obj = {
+//      name : "Aman",
+//      age : 23,
+
+//      address : {
+//           city : "Delhi",
+//           country : "India"
+//      }
+// }
+
+// let deepCopyObject = structuredClone(obj);
+
+// deepCopyObject.name = "Rohit"
+
+// deepCopyObject.address.city = "Lucknow"
+
+// console.log(obj)
+// console.log(deepCopyObject)
+
+
+// Deep copy
+
+
+// let obj = {
+//      name : "Aman",
+//      age : 23,
+
+//      address : {
+//           city : "Delhi",
+//           country : "India"
+//      }
+// }
+
+
+// let copyObj = JSON.parse(JSON.stringify(obj));
+
+// console.log(copyObj)
+
+
+
+// JSON Serialization
+
+
+let obj = {
+     name : "Aman",
+     age : 23,
+     email : "amansinghhdi951@gmail.com",
+     skills : ["React.js","Node.js","Express.js","MongoDB"],
+     address : {
+          city : "delhi",
+          Country : "India",
+     },
+     isLoggedIn : true,
+     isMiddlewarePassed : true
+}
+
+let jsonData = JSON.stringify(obj);
+console.log(jsonData)
+
+let realObj = JSON.parse(jsonData)
+console.log(realObj);
 
 
 
