@@ -269,6 +269,94 @@
 
 // console.log(a,b,c,e);
 
+// Linear Search
+
+// let arr = [1,2,3,4,5,6,7];
+// let target = 6;
+
+// for(let i=0;i<arr.length;i++)
+// {
+//      if(arr[i] == target)
+//      {
+//           console.log("Found");
+//           break;
+//      }
+// }
+
+
+// Math function 
+
+
+// let num1 = 43;
+// let num2 =  3
+
+// // let result = Math.floor(num1 / num2)
+
+
+// let result = Math.ceil(num1/num2);
+
+// console.log(result);
+
+
+// console.log(Math.floor(Math.random()*10));
+
+
+// Binary search 
+// Binary search works on Sorted Array
+
+// let arr = [1,2,3,4,5,6,7];
+// let target = 3;
+
+// let left  = 0;
+// let right = arr.length;
+
+// while(left <= right)
+// {
+//      let mid = Math.floor((left + right ) / 2);
+
+//      if(arr[mid] === target)
+//      {
+//           console.log("found");
+//           break;
+//      }
+
+//      if(arr[mid] < target)
+//      {
+//           left  = mid +1
+//      }
+//      else{
+//           right = mid -1;
+//      }
+// }
 
 
 
+
+// Nested Array
+
+let nestedArray = [
+
+     [1,2,3,4],
+     [5,6,7,8],
+     [9,10,11,12]
+
+]
+
+
+// console.log(nestedArray[0][2])
+// console.log(nestedArray[1][3])
+
+let arr = [
+  [1, 2, 3, 4],
+  [5, 6, 7, 8],
+  [9, 10, 11, 12],
+];
+
+
+for(let i=0;i<arr.length;i++)
+{
+     for(let j=0;j<arr[i].length;j++)
+     {
+          console.log(arr[i][j])
+     }
+}

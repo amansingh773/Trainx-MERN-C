@@ -206,24 +206,24 @@
 // JSON Serialization
 
 
-let obj = {
-     name : "Aman",
-     age : 23,
-     email : "amansinghhdi951@gmail.com",
-     skills : ["React.js","Node.js","Express.js","MongoDB"],
-     address : {
-          city : "delhi",
-          Country : "India",
-     },
-     isLoggedIn : true,
-     isMiddlewarePassed : true
-}
+// let obj = {
+//      name : "Aman",
+//      age : 23,
+//      email : "amansinghhdi951@gmail.com",
+//      skills : ["React.js","Node.js","Express.js","MongoDB"],
+//      address : {
+//           city : "delhi",
+//           Country : "India",
+//      },
+//      isLoggedIn : true,
+//      isMiddlewarePassed : true
+// }
 
-let jsonData = JSON.stringify(obj);
-console.log(jsonData)
+// let jsonData = JSON.stringify(obj);
+// console.log(jsonData)
 
-let realObj = JSON.parse(jsonData)
-console.log(realObj);
+// let realObj = JSON.parse(jsonData)
+// console.log(realObj);
 
 
 
