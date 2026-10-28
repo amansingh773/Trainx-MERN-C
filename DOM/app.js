@@ -167,12 +167,46 @@
 // heading.remove();
 
 
+
+
 // form submission and preventDefault
 
-let form = document.getElementById("myForm");
+// let form = document.getElementById("myForm");
 
-form.addEventListener("submit",(event)=>{
-     event.preventDefault();
-     console.log("Login Successfully");
+// form.addEventListener("submit",(event)=>{
+//      event.preventDefault();
+//      console.log("Login Successfully");
 
+// })
+
+// Client Side Form Validation
+
+const form = document.getElementById("myForm");
+const email = document.getElementById("email");
+let errorMessage = document.getElementById("message");
+
+
+form.addEventListener("click",(e)=>{
+     e.preventDefault();
+
+     if(email.value.trim()==="")
+     {
+          errorMessage.textContent = "Email is invalid";
+
+          errorMessage.style.color = "white"
+          errorMessage.style.backgroundColor = "red"
+          errorMessage.style.fontSize = "24px"
+          errorMessage.style.fontWeight = "700"
+          errorMessage.style.borderRadius = "10px"
+     }
+     else
+     {
+          errorMessage.textContent = "Register Successfully"
+
+          errorMessage.style.color = "white";
+          errorMessage.style.backgroundColor = "green";
+          errorMessage.style.fontSize = "24px";
+          errorMessage.style.fontWeight = "700";
+          errorMessage.style.borderRadius = "10px";
+     }
 })
